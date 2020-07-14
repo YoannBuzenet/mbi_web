@@ -21,8 +21,9 @@ body {
   margin: 0 auto;
 }
 
-.blue {
-  background-color: blue;
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 /**********************/
@@ -42,6 +43,103 @@ body {
   font-size: 5rem;
 }
 
+.first-liner {
+  padding: 3rem 0;
+  position: relative;
+}
+
+.first-liner .software-image img {
+  position: absolute;
+  transform: rotate(-20deg);
+  width: 900px;
+  right: -250px;
+  top: -50px;
+  z-index: -1;
+}
+
 .second-liner {
   background-color: rgb(210, 214, 220);
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0;
+}
+
+.card {
+  font-size: 1.4rem;
+  width: 30%;
+  margin: 0 1%;
+  line-height: 2rem;
+}
+
+.card .card-title {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.third-liner {
+  background-color: rgb(244, 245, 247);
+  padding: 3rem 0;
+}
+.third-liner p {
+  color: rgb(75, 85, 99);
+  font-size: 2rem;
+  text-align: center;
+}
+
+h2.punchline {
+  margin: 0;
+  font-size: 3rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1400px) {
+  .first-liner .software-image img {
+    position: absolute;
+    transform: rotate(-35deg);
+    width: 800px;
+    right: -450px;
+    top: -100px;
+    z-index: -1;
+  }
+}
+@media only screen and (max-width: 1024) {
+  body {
+    background-color: lightblue;
+  }
+}
+@media only screen and (max-width: 768) {
+  body {
+    background-color: lightblue;
+  }
+}
+@media only screen and (max-width: 640) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+/**********************/
+/********NAVBAR*******/
+/**********************/
+
+nav.navbar {
+  margin: 1rem 0;
+  font-size: 1.6rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  width: 100px;
+}
+
+.menu-elements {
+  display: flex;
+  justify-content: space-around;
 }
