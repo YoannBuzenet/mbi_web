@@ -75,6 +75,9 @@ export default function Home() {
               Your customers just have to connect, check your prices, and sell
               you their cards.
             </p>
+            <div>
+              <img src="/images/sampleBasket.png" />
+            </div>
           </div>
         </div>
         <div className="fourth-liner">

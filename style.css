@@ -1,7 +1,9 @@
 /**********************/
 /*******GENERAL*******/
 /**********************/
-
+:root {
+  --line-height: 2.4rem;
+}
 * {
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
@@ -77,15 +79,17 @@ ul {
 
 .first-liner .software-image img {
   position: absolute;
-  width: 900px;
+  width: 1200px;
   transform: rotate(-5deg);
-  right: -250px;
+  right: -500px;
   top: -50px;
   z-index: -1;
 }
 
 .second-liner {
   background-color: #f9fafb;
+  border-top: 1px solid rgba(210, 214, 220, 0.5);
+  border-bottom: 1px solid rgba(210, 214, 220, 0.5);
 }
 
 .cards-container {
@@ -98,7 +102,7 @@ ul {
   font-size: 1.4rem;
   width: 30%;
   margin: 0 1%;
-  line-height: 2rem;
+  line-height: var(--line-height);
 }
 
 .card .card-title {
@@ -118,19 +122,29 @@ ul {
   height: 400px;
   background-color: rgb(244, 245, 247);
   padding: 3rem 0;
+  text-align: center;
+}
+
+.third-liner h2.punchline {
+  max-width: 768px;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  margin: auto;
 }
 .third-liner p {
   color: rgb(75, 85, 99);
   font-size: 2rem;
-  text-align: center;
+  max-width: 768px;
+  margin: auto;
+  line-height: var(--line-height);
 }
 
 .third-liner img {
   position: absolute;
   width: 1000px;
-  top: 50;
   left: 450px;
-  z-index: 0;
+  top: 250px;
+  border: 1px solid rgba(210, 214, 220, 0.5);
 }
 
 h2.punchline {
@@ -142,7 +156,8 @@ h2.punchline {
 .fourth-liner {
   background-color: #161e2e;
   color: white;
-  height: 300px;
+  height: 600px;
+  padding-top: 35rem;
 }
 
 .fourth-liner p {
