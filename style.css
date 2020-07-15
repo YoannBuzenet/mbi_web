@@ -29,7 +29,6 @@ ul {
 }
 
 main {
-  width: 99.1%;
   overflow: hidden;
 }
 
@@ -210,7 +209,7 @@ main {
 .third-liner img {
   position: absolute;
   width: 1000px;
-  left: 0;
+  left: 10px;
   top: 250px;
   border: 1px solid rgba(210, 214, 220, 0.5);
 }
@@ -315,7 +314,6 @@ footer span {
 /**********************/
 
 nav.navbar {
-  margin-bottom: 1rem;
   padding: 2rem 0;
   font-size: 1.6rem;
   background-color: white;
