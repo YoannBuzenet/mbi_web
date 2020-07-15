@@ -28,6 +28,11 @@ ul {
   padding: 0;
 }
 
+main {
+  width: 99.1vw;
+  overflow: hidden;
+}
+
 /**********************/
 /*******HOMEPAGE*******/
 /**********************/
@@ -46,7 +51,8 @@ ul {
   margin-top: 20px;
 }
 
-.left-content button {
+.left-content button,
+.CTA-button {
   margin-top: 32px;
   padding-left: 3.5rem;
   padding-right: 3.5rem;
@@ -62,7 +68,8 @@ ul {
   transition: background-color 0.5s;
 }
 
-.left-content button:hover {
+.left-content button:hover,
+.CTA-button:hover {
   background-color: rgba(63, 131, 248, 0.8);
   transition: background-color 0.5s;
 }
@@ -158,6 +165,7 @@ h2.punchline {
   color: white;
   height: 600px;
   padding-top: 35rem;
+  padding-bottom: 30rem;
 }
 
 .fourth-liner p {
@@ -165,10 +173,55 @@ h2.punchline {
   text-align: center;
 }
 
+.fourth-liner .tick-box {
+  margin-left: 156px;
+  margin-right: 156px;
+  display: flex;
+  justify-content: center;
+  font-size: 1.8rem;
+}
+
+.tick-box > div {
+  width: 30%;
+}
+
+.tick-box > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.tick-box > div > div svg {
+  margin-right: 10px;
+}
+
 h3.punchline {
   margin: 0;
   font-size: 3rem;
   text-align: center;
+}
+
+.fifth-liner {
+  padding: 5rem 0;
+  background-color: rgb(249, 250, 251);
+}
+
+.fifth-liner > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.fifth-liner button.CTA-button {
+  margin-top: 0;
+}
+
+.fifth-liner p {
+  font-size: 2.8rem;
+  font-weight: 700;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -206,6 +259,27 @@ h3.punchline {
     top: 50px;
     z-index: -1;
   }
+}
+
+/**********************/
+/********Footer*******/
+/**********************/
+
+footer {
+  background-color: rgb(249, 250, 251);
+  color: rgb(159, 166, 178);
+  padding-bottom: 6rem;
+}
+footer > div {
+  border-top: 1px solid rgba(210, 214, 220, 0.5);
+}
+
+footer span {
+  font-size: 1.8rem;
+}
+
+.footerContent {
+  padding-top: 2rem;
 }
 
 /**********************/

@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Navbar from "../components/Navbar";
+const Check = require("react-feather/dist/icons/check").default;
 
 export default function Home() {
   return (
@@ -87,11 +88,81 @@ export default function Home() {
               Cards you buy are automatically transferred to your MKM account,
               ready to be sold.
             </p>
+            <div className="tick-box">
+              <div>
+                <div>
+                  <Check />
+                  <span>Automatic buying prices</span>
+                </div>
+                <div>
+                  <Check />
+                  <span>MKM Prices up-to-date</span>
+                </div>
+                <div>
+                  <Check />
+                  <span>Customer Sell Requests</span>
+                </div>
+                <div>
+                  <Check />
+                  <span>Manage Customer Data</span>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <Check />
+                  <span>Sell Automatically</span>
+                </div>
+                <div>
+                  <Check />
+                  <span>Automatic prices</span>
+                </div>
+                <div>
+                  <Check />
+                  <span>Daily follow-up</span>
+                </div>
+                <div>
+                  <Check />
+                  <span>Update anytime</span>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <Check />
+                  <span>Automatic Mailing</span>
+                </div>
+                <div>
+                  <Check />
+                  <span>PDF Generation</span>
+                </div>
+                <div>
+                  <Check />
+                  <span>International App</span>
+                </div>
+                <div>
+                  <Check />
+                  <span>Customer follow-up</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="fifth-liner">
+          <div>
+            <p>Call us and get a demo</p>
+            <button type="button" className="CTA-button">
+              Get Started
+            </button>
           </div>
         </div>
       </main>
 
-      <footer></footer>
+      <footer>
+        <div className="container">
+          <div className="footerContent">
+            <span>© 2020 MTG-Interface, Inc. All rights reserved.</span>
+          </div>
+        </div>
+      </footer>
     </>
   );
 }
