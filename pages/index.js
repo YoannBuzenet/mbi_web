@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Navbar from "../components/Navbar";
-const Check = require("react-feather/dist/icons/check").default;
+import * as Icon from "react-feather";
 
 export default function Home() {
   return (
@@ -91,55 +91,55 @@ export default function Home() {
             <div className="tick-box">
               <div>
                 <div>
-                  <Check />
+                  <Icon.Check />
                   <span>Automatic buying prices</span>
                 </div>
                 <div>
-                  <Check />
+                  <Icon.Check />
                   <span>MKM Prices up-to-date</span>
                 </div>
                 <div>
-                  <Check />
+                  <Icon.Check />
                   <span>Customer Sell Requests</span>
                 </div>
                 <div>
-                  <Check />
+                  <Icon.Check />
                   <span>Manage Customer Data</span>
                 </div>
               </div>
               <div>
                 <div>
-                  <Check />
+                  <Icon.Check />
                   <span>Sell Automatically</span>
                 </div>
                 <div>
-                  <Check />
+                  <Icon.Check />
                   <span>Automatic prices</span>
                 </div>
                 <div>
-                  <Check />
+                  <Icon.Check />
                   <span>Daily follow-up</span>
                 </div>
                 <div>
-                  <Check />
+                  <Icon.Check />
                   <span>Update anytime</span>
                 </div>
               </div>
               <div>
                 <div>
-                  <Check />
+                  <Icon.Check />
                   <span>Automatic Mailing</span>
                 </div>
                 <div>
-                  <Check />
+                  <Icon.Check />
                   <span>PDF Generation</span>
                 </div>
                 <div>
-                  <Check />
+                  <Icon.Check />
                   <span>International App</span>
                 </div>
                 <div>
-                  <Check />
+                  <Icon.Check />
                   <span>Customer follow-up</span>
                 </div>
               </div>

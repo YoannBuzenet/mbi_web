@@ -8,9 +8,8 @@ const Navbar = () => {
           <div className="menu-elements">
             <span>MTG INTERFACE</span>
             <ul>
-              <li>Software</li>
+              <li>Get Started</li>
               <li>About Us</li>
-              <li>Contact</li>
             </ul>
           </div>
         </div>
