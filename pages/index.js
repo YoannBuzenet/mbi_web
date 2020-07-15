@@ -85,8 +85,8 @@ export default function Home() {
           <div className="container">
             <h3 className="punchline">Sync with MKM</h3>
             <p>
-              Cards you buy are automatically transferred to your MKM account,
-              ready to be sold.
+              Cards are automatically transferred to your MKM account, ready to
+              be sold.
             </p>
             <div className="tick-box">
               <div>
