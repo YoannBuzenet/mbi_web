@@ -92,7 +92,7 @@ export default function Home() {
               <div>
                 <div>
                   <Icon.Check />
-                  <span>Automatic buying prices</span>
+                  <span>Buying prices</span>
                 </div>
                 <div>
                   <Icon.Check />
@@ -100,11 +100,11 @@ export default function Home() {
                 </div>
                 <div>
                   <Icon.Check />
-                  <span>Customer Sell Requests</span>
+                  <span>Manage Sell Requests</span>
                 </div>
                 <div>
                   <Icon.Check />
-                  <span>Manage Customer Data</span>
+                  <span>Manage Customers</span>
                 </div>
               </div>
               <div>

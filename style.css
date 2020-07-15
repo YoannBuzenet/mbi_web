@@ -209,8 +209,9 @@ main {
 .third-liner img {
   position: absolute;
   width: 1000px;
-  left: 10px;
-  top: 250px;
+  left: 50%;
+  top: 120%;
+  transform: translate(-50%, -50%);
   border: 1px solid rgba(210, 214, 220, 0.5);
 }
 
@@ -218,6 +219,22 @@ h2.punchline {
   margin: 0;
   font-size: 3rem;
   text-align: center;
+}
+
+@media only screen and (max-width: 1400px) {
+  .third-liner img {
+    width: 800px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .third-liner img {
+    width: 600px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .third-liner img {
+    display: none;
+  }
 }
 
 /***FOURTH LINER ***/
@@ -264,6 +281,36 @@ h3.punchline {
   text-align: center;
 }
 
+@media only screen and (max-width: 1400px) {
+  .fourth-liner .tick-box {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .fourth-liner {
+    padding-top: 25rem;
+  }
+  .fourth-liner .tick-box {
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .fourth-liner {
+    padding-top: 10rem;
+    height: auto;
+    padding-bottom: 5rem;
+  }
+  .fourth-liner .tick-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tick-box > div {
+    width: 50%;
+  }
+}
+
 /***FIFTH LINER ***/
 
 .fifth-liner {
@@ -288,6 +335,13 @@ h3.punchline {
   font-weight: 700;
 }
 
+@media only screen and (max-width: 1400px) {
+  .fifth-liner > div {
+    flex-direction: column;
+    text-align: left;
+  }
+}
+
 /**********************/
 /********Footer*******/
 /**********************/
@@ -307,6 +361,12 @@ footer span {
 
 .footerContent {
   padding-top: 2rem;
+}
+
+@media only screen and (max-width: 1400px) {
+  footer span {
+    font-size: 1.4rem;
+  }
 }
 
 /**********************/
