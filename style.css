@@ -39,8 +39,35 @@ ul {
   width: 50%;
 }
 
+.left-content p {
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+.left-content button {
+  margin-top: 32px;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  border: 1px solid transparent;
+  background-color: rgb(28, 100, 242);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.5s;
+}
+
+.left-content button:hover {
+  background-color: rgba(63, 131, 248, 0.8);
+  transition: background-color 0.5s;
+}
+
 .main-punchline {
-  font-size: 5rem;
+  font-size: 6.4rem;
+  margin-bottom: 0;
 }
 
 .first-liner {
@@ -50,21 +77,21 @@ ul {
 
 .first-liner .software-image img {
   position: absolute;
-  transform: rotate(-20deg);
   width: 900px;
+  transform: rotate(-5deg);
   right: -250px;
   top: -50px;
   z-index: -1;
 }
 
 .second-liner {
-  background-color: rgb(210, 214, 220);
+  background-color: #f9fafb;
 }
 
 .cards-container {
   display: flex;
   justify-content: center;
-  padding: 3rem 0;
+  padding: 8rem 0;
 }
 
 .card {
@@ -78,9 +105,17 @@ ul {
   display: block;
   font-weight: bold;
   margin-bottom: 1rem;
+  font-size: 2.4rem;
+}
+
+.card span:last-child {
+  font-size: 1.8rem;
+  color: rgb(75, 85, 99);
 }
 
 .third-liner {
+  position: relative;
+  height: 400px;
   background-color: rgb(244, 245, 247);
   padding: 3rem 0;
 }
@@ -90,7 +125,32 @@ ul {
   text-align: center;
 }
 
+.third-liner img {
+  position: absolute;
+  width: 1000px;
+  top: 50;
+  left: 450px;
+  z-index: 0;
+}
+
 h2.punchline {
+  margin: 0;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.fourth-liner {
+  background-color: #161e2e;
+  color: white;
+  height: 300px;
+}
+
+.fourth-liner p {
+  font-size: 2rem;
+  text-align: center;
+}
+
+h3.punchline {
   margin: 0;
   font-size: 3rem;
   text-align: center;
@@ -99,26 +159,37 @@ h2.punchline {
 @media only screen and (max-width: 1400px) {
   .first-liner .software-image img {
     position: absolute;
-    transform: rotate(-35deg);
     width: 800px;
-    right: -450px;
-    top: -100px;
+    right: -200px;
+    top: 0;
     z-index: -1;
   }
 }
-@media only screen and (max-width: 1024) {
-  body {
-    background-color: lightblue;
+@media only screen and (max-width: 1024px) {
+  .first-liner .software-image img {
+    position: absolute;
+    width: 800px;
+    right: -450px;
+    top: 0px;
+    z-index: -1;
   }
 }
-@media only screen and (max-width: 768) {
-  body {
-    background-color: lightblue;
+@media only screen and (max-width: 768px) {
+  .first-liner .software-image img {
+    position: absolute;
+    width: 800px;
+    right: -450px;
+    top: 0px;
+    z-index: -1;
   }
 }
-@media only screen and (max-width: 640) {
-  body {
-    background-color: lightblue;
+@media only screen and (max-width: 640px) {
+  .first-liner .software-image img {
+    position: absolute;
+    width: 600px;
+    right: -300px;
+    top: 50px;
+    z-index: -1;
   }
 }
 
@@ -127,8 +198,11 @@ h2.punchline {
 /**********************/
 
 nav.navbar {
-  margin: 1rem 0;
+  margin-bottom: 1rem;
+  padding: 2rem 0;
   font-size: 1.6rem;
+  background-color: white;
+  border-bottom: 1px solid rgb(210, 214, 220);
 }
 
 nav ul {
@@ -137,9 +211,15 @@ nav ul {
 }
 nav ul li {
   width: 100px;
+  font-weight: 500;
 }
 
 .menu-elements {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.menu-elements > span {
+  font-size: 2rem;
+  font-weight: 600;
 }

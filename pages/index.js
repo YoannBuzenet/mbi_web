@@ -26,6 +26,10 @@ export default function Home() {
                   <h1 className="main-punchline">
                     Buying cards has never been so easy
                   </h1>
+                  <p>Control your card sourcing with a software.</p>
+                  <div>
+                    <button type="button">Get Started</button>
+                  </div>
                 </div>
                 <div className="right-content"></div>
               </div>
@@ -36,22 +40,26 @@ export default function Home() {
           <div className="container">
             <div className="cards-container">
               <div className="card">
-                <span className="card-title">Adjective 1</span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Mollitia ex modi fugit at expedita, fuga laboriosam doloribus in
-                quos optio!
+                <span className="card-title">Buy what you want</span>
+                <span>
+                  Fix your buying prices only on the cards you want. If you want
+                  to buy everything, we've got you covered !
+                </span>
               </div>
               <div className="card">
-                <span className="card-title">Adjective 2</span>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos
-                veniam quasi rerum. Ipsum ipsa corrupti odit natus beatae
-                perspiciatis libero?
+                <span className="card-title">Save your time</span>
+                <span>
+                  {" "}
+                  Customers list their cards themselves. You just have to
+                  receive them, check the condition, and validate.
+                </span>
               </div>
               <div className="card">
-                <span className="card-title">Adjective 3</span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laudantium odit error voluptatum exercitationem, harum incidunt
-                facere a assumenda ipsa minus.
+                <span className="card-title">Sync with MKM</span>
+                <span>
+                  Once the customer did agree with your price and grading, you
+                  just click one button. All the cards are for sale on MKM !
+                </span>
               </div>
             </div>
           </div>
@@ -59,13 +67,22 @@ export default function Home() {
         <div className="third-liner">
           <div className="container">
             <h2 className="punchline">
-              Fix your prices. Let the customers come.
+              Fix your prices. Let the customers do the rest.
             </h2>
             <p>
               MTG Interface enables you to fix all your buying prices for any
               MTG card : regular, foil, signed, in any condition or language.
               Your customers just have to connect, check your prices, and sell
               you their cards.
+            </p>
+          </div>
+        </div>
+        <div className="fourth-liner">
+          <div className="container">
+            <h3 className="punchline">Sync with MKM</h3>
+            <p>
+              Cards you buy are automatically transferred to your MKM account,
+              ready to be sold.
             </p>
           </div>
         </div>
