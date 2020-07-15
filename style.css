@@ -33,6 +33,12 @@ main {
   overflow: hidden;
 }
 
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 80%;
+  }
+}
+
 /**********************/
 /*******HOMEPAGE*******/
 /**********************/
@@ -161,6 +167,20 @@ main {
 .card span:last-child {
   font-size: 1.8rem;
   color: rgb(75, 85, 99);
+}
+
+@media only screen and (max-width: 1024px) {
+  .cards-container {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+    padding-bottom: 5rem;
+  }
+
+  .card-title {
+    font-size: 1.8rem;
+  }
 }
 
 /***THIRD LINER ***/
