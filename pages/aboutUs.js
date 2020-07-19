@@ -17,7 +17,9 @@ const AboutUs = () => {
       <Navbar />
 
       <div className="aboutUs">
-        <p>The MTG Interface team</p>
+        <div className="container768">
+          <h1>The MTG Interface team</h1>
+        </div>
         <div className="profiles-container">
           <div className="profiles container768">
             <div className="yoann">
@@ -29,7 +31,7 @@ const AboutUs = () => {
                 <p>
                   Yoann worked for years in the MTG Industry. Former top seller
                   on MKM, he then worked for one of the biggest European MTG
-                  shop as a buying manager and GP manager.
+                  shop as a buying manager and GP booth manager.
                 </p>
               </div>
             </div>

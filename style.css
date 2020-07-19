@@ -454,6 +454,44 @@ footer span {
 }
 
 /**********************/
+/******CONTACT US******/
+/**********************/
+
+.getStarted {
+}
+.form-background {
+  padding: 5rem 3rem 3rem 3rem;
+  background-color: rgb(244, 245, 247);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.getStarted form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}
+
+.getStarted form label,
+.getStarted form {
+  font-size: 2rem;
+}
+
+.getStarted form > div {
+  margin-bottom: 3rem;
+  width: 50%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .getStarted form > div {
+    margin-bottom: 3rem;
+    width: 90%;
+  }
+}
+
+/**********************/
 /********NAVBAR*******/
 /**********************/
 
