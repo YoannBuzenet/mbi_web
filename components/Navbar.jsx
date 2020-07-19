@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -6,10 +7,24 @@ const Navbar = () => {
       <nav className="navbar">
         <div className="container">
           <div className="menu-elements">
-            <span>MTG INTERFACE</span>
+            <div className="left-navbar">
+              <Link href="/">
+                <a>
+                  <span>MTG INTERFACE</span>
+                </a>
+              </Link>
+            </div>
             <ul>
-              <li>Get Started</li>
-              <li>About Us</li>
+              <li>
+                <Link href="/aboutUs">
+                  <a>About Us</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/getStarted">
+                  <a>Get Started</a>
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

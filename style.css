@@ -380,6 +380,10 @@ nav.navbar {
   border-bottom: 1px solid rgb(210, 214, 220);
 }
 
+.left-navbar {
+  display: flex;
+}
+
 nav ul {
   display: flex;
   list-style: none;
@@ -394,9 +398,21 @@ nav ul li {
   justify-content: space-between;
 }
 
-.menu-elements > span {
+.menu-elements a > span {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 300;
+}
+.menu-elements a > span:hover {
+  font-size: 2rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+.navbar ul a:hover {
+  /* text-decoration: underline; */
+  border-bottom: 3px solid black;
 }
 
 @media only screen and (max-width: 768px) {

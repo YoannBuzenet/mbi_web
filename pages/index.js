@@ -27,7 +27,7 @@ export default function Home() {
                   <h1 className="main-punchline">
                     Buying cards has never been so easy
                   </h1>
-                  <p>Control your card sourcing with a software.</p>
+                  <p>Get your own buying interface.</p>
                   <div>
                     <button type="button">Get Started</button>
                   </div>
@@ -140,7 +140,7 @@ export default function Home() {
                 </div>
                 <div>
                   <Icon.Check />
-                  <span>Customer follow-up</span>
+                  <span>MKM follow-up</span>
                 </div>
               </div>
             </div>
