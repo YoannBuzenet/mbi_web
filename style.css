@@ -58,9 +58,12 @@ main {
   margin-top: 20px;
 }
 
-.left-content button,
-.CTA-button {
+.cta-main {
   margin-top: 32px;
+}
+
+.left-content a,
+.CTA-button {
   padding-left: 3.5rem;
   padding-right: 3.5rem;
   padding-top: 1.5rem;
@@ -73,9 +76,10 @@ main {
   cursor: pointer;
   border-radius: 6px;
   transition: background-color 0.5s;
+  text-decoration: none;
 }
 
-.left-content button:hover,
+.left-content a:hover,
 .CTA-button:hover {
   background-color: rgba(63, 131, 248, 0.8);
   transition: background-color 0.5s;
@@ -326,7 +330,7 @@ h3.punchline {
   margin: 0 auto;
 }
 
-.fifth-liner button.CTA-button {
+.fifth-liner a.CTA-button {
   margin-top: 0;
 }
 
@@ -366,6 +370,86 @@ footer span {
 @media only screen and (max-width: 1400px) {
   footer span {
     font-size: 1.4rem;
+  }
+}
+
+/**********************/
+/*******ABOUT US*******/
+/**********************/
+.aboutUs {
+  margin: 0 auto;
+}
+
+.aboutUs p:first-child {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.profiles-container {
+  background-color: #f9fafb;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.container768 {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.profiles > div {
+  display: flex;
+  margin-bottom: 5rem;
+}
+
+.profiles .description {
+  margin-left: 50px;
+}
+.profiles .description p {
+  text-align: left;
+}
+.profiles .description p:first-child {
+  margin-bottom: 1rem;
+}
+.profiles .description p:nth-of-type(2) {
+  font-size: 1.8rem;
+  color: rgb(75, 85, 99);
+}
+
+.profiles .picture img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.mkm-section {
+  background-color: rgb(244, 245, 247);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.mkm-section span {
+  color: green;
+}
+
+.mkm-section p:nth-of-type(2) {
+  font-size: 1.8rem;
+  color: rgb(75, 85, 99);
+}
+
+.mkm-section ul {
+  margin-top: 1rem;
+}
+
+.aboutUs .contact {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+@media only screen and (max-width: 1400px) {
+  .container768 {
+    max-width: 80%;
+    margin: 0 auto;
   }
 }
 

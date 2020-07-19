@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import * as Icon from "react-feather";
+import Footer from "../components/Footer";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -28,8 +30,10 @@ export default function Home() {
                     Buying cards has never been so easy
                   </h1>
                   <p>Get your own buying interface.</p>
-                  <div>
-                    <button type="button">Get Started</button>
+                  <div className="cta-main">
+                    <Link href="/getStarted">
+                      <a type="button">Get Started</a>
+                    </Link>
                   </div>
                 </div>
                 <div className="right-content"></div>
@@ -59,7 +63,8 @@ export default function Home() {
                 <span className="card-title">Sync with MKM</span>
                 <span>
                   Once the customer did agree with your price and grading, you
-                  just click one button. All the cards are for sale on MKM !
+                  just click one button. All the cards are directly for sale on
+                  MKM !
                 </span>
               </div>
             </div>
@@ -149,20 +154,14 @@ export default function Home() {
         <div className="fifth-liner">
           <div>
             <p>Call us and get a demo</p>
-            <button type="button" className="CTA-button">
-              Get Started
-            </button>
+            <Link href="/getStarted">
+              <a className="CTA-button">Get Started</a>
+            </Link>
           </div>
         </div>
       </main>
 
-      <footer>
-        <div className="container">
-          <div className="footerContent">
-            <span>© 2020 MTG-Interface, Inc. All rights reserved.</span>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }
