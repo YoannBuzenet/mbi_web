@@ -153,7 +153,7 @@ export default function Home() {
         </div>
         <div className="fifth-liner">
           <div>
-            <p>Call us and get a demo</p>
+            <p>Contact us and get a demo</p>
             <Link href="/getStarted">
               <a className="CTA-button">Get Started</a>
             </Link>

@@ -413,6 +413,8 @@ footer span {
 .profiles .description p:nth-of-type(2) {
   font-size: 1.8rem;
   color: rgb(75, 85, 99);
+  line-height: 2.5rem;
+  margin-top: 1rem;
 }
 
 .profiles .picture img {
