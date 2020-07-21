@@ -3,8 +3,20 @@ import Head from "next/head";
 import Link from "next/link";
 import { TextField } from "@material-ui/core";
 import Footer from "../components/Footer";
+import { useEffect } from "react";
 
 const GetStarted = () => {
+  function onSubmit(token) {
+    document.getElementById("demo-form").submit();
+  }
+
+  useEffect(() => {
+    const script = document.createElement("script");
+
+    script.src = "https://www.google.com/recaptcha/api.js";
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
   return (
     <>
       <Head>
@@ -19,7 +31,7 @@ const GetStarted = () => {
       <div className="container">
         <div className="getStarted">
           <div className="container768">
-            <h1>Contact us - We'll get back to you very soon</h1>
+            <h1>Contact us - We'll get back to you in 24 hours</h1>
           </div>
           <div className="container768">
             <div className="form-background">
@@ -105,7 +117,13 @@ const GetStarted = () => {
                     fullWidth
                   />
                 </div>
-                <button type="submit" className="CTA-button">
+                <button
+                  data-sitekey="6Ld6W7MZAAAAANX78hgKffGvsPuMGromS-n0nb6K"
+                  data-callback="onSubmit"
+                  data-action="submit"
+                  className="CTA-button"
+                  onClick={onSubmit}
+                >
                   Send
                 </button>
               </form>

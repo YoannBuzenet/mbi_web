@@ -75,7 +75,7 @@ const AboutUs = () => {
           <div className="contact">
             <Link href="/getStarted">
               <a type="button" className="CTA-button">
-                Book a phone call and get a demo
+                Contact us and get a demo
               </a>
             </Link>
           </div>
