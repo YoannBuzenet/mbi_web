@@ -4,6 +4,7 @@ import Link from "next/link";
 import { TextField } from "@material-ui/core";
 import Footer from "../components/Footer";
 import { useEffect } from "react";
+import axios from "axios";
 
 const GetStarted = () => {
   function checkCaptcha(e) {
@@ -15,6 +16,12 @@ const GetStarted = () => {
         })
         .then(function (token) {
           console.log(token);
+          axios
+            .post("https://www.google.com/recaptcha/api/siteverify", {
+              secret: process.env.NEXT_PUBLIC_CLIENTSIDE_RECAPTCHA_KEY,
+              response: token,
+            })
+            .then((googleResp) => console.log(googleResp));
         });
     });
   }
