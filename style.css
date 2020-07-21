@@ -548,3 +548,10 @@ nav ul li {
     margin-top: 2rem;
   }
 }
+
+/*****************/
+/*****Google******/
+/*****************/
+div.grecaptcha-badge {
+  width: 0px;
+}
