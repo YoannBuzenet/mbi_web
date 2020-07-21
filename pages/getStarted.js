@@ -10,7 +10,7 @@ const GetStarted = () => {
     e.preventDefault();
     grecaptcha.ready(function () {
       grecaptcha
-        .execute(process.env.CLIENTSIDE_RECAPTCHA_KEY, {
+        .execute(process.env.NEXT_PUBLIC_CLIENTSIDE_RECAPTCHA_KEY, {
           action: "form_submission",
         })
         .then(function (token) {
@@ -24,7 +24,7 @@ const GetStarted = () => {
 
     script.src =
       "https://www.google.com/recaptcha/api.js?render=" +
-      process.env.CLIENTSIDE_RECAPTCHA_KEY;
+      process.env.NEXT_PUBLIC_CLIENTSIDE_RECAPTCHA_KEY;
     script.async = true;
     document.body.appendChild(script);
   }, []);
