@@ -7,7 +7,7 @@ import { useEffect } from "react";
 
 const GetStarted = () => {
   function onSubmit(token) {
-    document.getElementById("demo-form").submit();
+    console.log(token);
   }
 
   useEffect(() => {
