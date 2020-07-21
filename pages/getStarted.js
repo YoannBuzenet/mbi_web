@@ -128,7 +128,11 @@ const GetStarted = () => {
                     fullWidth
                   />
                 </div>
-                <button className="CTA-button" onClick={(e) => checkCaptcha(e)}>
+                <button
+                  className="CTA-button"
+                  onClick={(e) => checkCaptcha(e)}
+                  type="button"
+                >
                   Send
                 </button>
               </form>
