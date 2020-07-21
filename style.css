@@ -553,5 +553,5 @@ nav ul li {
 /*****Google******/
 /*****************/
 div.grecaptcha-badge {
-  width: 0px;
+  width: 0px !important;
 }
