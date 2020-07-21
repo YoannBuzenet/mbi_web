@@ -6,14 +6,23 @@ import Footer from "../components/Footer";
 import { useEffect } from "react";
 
 const GetStarted = () => {
-  function onSubmit(token) {
-    console.log(token);
+  function checkCaptcha(e) {
+    e.preventDefault();
+    grecaptcha.ready(function () {
+      grecaptcha
+        .execute(process.env.CLIENTSIDE_RECAPTCHA_KEY, { action: "submit" })
+        .then(function (token) {
+          console.log(token);
+        });
+    });
   }
 
   useEffect(() => {
     const script = document.createElement("script");
 
-    script.src = "https://www.google.com/recaptcha/api.js";
+    script.src =
+      "https://www.google.com/recaptcha/api.js?render=" +
+      process.env.CLIENTSIDE_RECAPTCHA_KEY;
     script.async = true;
     document.body.appendChild(script);
   }, []);
@@ -117,13 +126,7 @@ const GetStarted = () => {
                     fullWidth
                   />
                 </div>
-                <button
-                  data-sitekey="6Ld6W7MZAAAAANX78hgKffGvsPuMGromS-n0nb6K"
-                  data-callback="onSubmit"
-                  data-action="submit"
-                  className="CTA-button"
-                  onClick={onSubmit}
-                >
+                <button className="CTA-button" onClick={checkCaptcha}>
                   Send
                 </button>
               </form>
