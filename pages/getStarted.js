@@ -35,7 +35,8 @@ const GetStarted = () => {
           formData["token"] = token;
           axios
             .post("api/mailContact", formData)
-            .then((respServer) => console.log(respServer));
+            .then((respServer) => console.log(respServer))
+            .catch((error) => console.log(error));
         });
     });
   }

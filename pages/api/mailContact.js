@@ -14,6 +14,7 @@ export default (req, res) => {
           res.statusCode = 200;
           res.end("On a bien reçu le POST avec ça dedans : ", req.body);
         } else {
+          console.log(googleResp);
           res.statusCode = 500;
           res.end("Message couldn't be posted.");
         }
