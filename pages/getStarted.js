@@ -3,10 +3,25 @@ import Head from "next/head";
 import Link from "next/link";
 import { TextField } from "@material-ui/core";
 import Footer from "../components/Footer";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 
 const GetStarted = () => {
+  const [formData, setFormData] = useState({
+    complete_name: "",
+    phone_number: "",
+    email: "",
+    shop_name: "",
+    country: "",
+    message: "",
+  });
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    formData[name] = value;
+    setFormData({ ...formData });
+  };
+
   function checkCaptcha(e) {
     e.preventDefault();
     grecaptcha.ready(function () {
@@ -16,12 +31,9 @@ const GetStarted = () => {
         })
         .then(function (token) {
           console.log(token);
-          axios
-            .post("https://www.google.com/recaptcha/api/siteverify", {
-              secret: process.env.NEXT_PUBLIC_CLIENTSIDE_RECAPTCHA_KEY,
-              response: token,
-            })
-            .then((googleResp) => console.log(googleResp));
+          //Adding token to state
+          formData["token"] = token;
+          axios.post("api/mailContact", formData);
         });
     });
   }
@@ -66,6 +78,9 @@ const GetStarted = () => {
                       style: { padding: "1rem", fontSize: "2rem" },
                     }}
                     fullWidth
+                    name="complete_name"
+                    value={formData.complete_name}
+                    onChange={handleChange}
                   />
                 </div>
                 <div>
@@ -79,6 +94,9 @@ const GetStarted = () => {
                       style: { padding: "1rem", fontSize: "2rem" },
                     }}
                     fullWidth
+                    name="phone_number"
+                    value={formData.phone_number}
+                    onChange={handleChange}
                   />
                 </div>
                 <div>
@@ -92,6 +110,9 @@ const GetStarted = () => {
                       style: { padding: "1rem", fontSize: "2rem" },
                     }}
                     fullWidth
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
                   />
                 </div>
 
@@ -106,6 +127,9 @@ const GetStarted = () => {
                       style: { padding: "1rem", fontSize: "2rem" },
                     }}
                     fullWidth
+                    name="shop_name"
+                    value={formData.shop_name}
+                    onChange={handleChange}
                   />
                 </div>
                 <div>
@@ -119,6 +143,9 @@ const GetStarted = () => {
                       style: { padding: "1rem", fontSize: "2rem" },
                     }}
                     fullWidth
+                    name="country"
+                    value={formData.country}
+                    onChange={handleChange}
                   />
                 </div>
                 <div>
@@ -133,6 +160,9 @@ const GetStarted = () => {
                       style: { padding: "1rem", fontSize: "1.35rem" },
                     }}
                     fullWidth
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
                   />
                 </div>
                 <button
