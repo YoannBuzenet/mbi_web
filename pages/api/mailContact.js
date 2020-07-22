@@ -11,7 +11,9 @@ export default (req, res) => {
     };
     axios
       .post(
-        "https://www.google.com/recaptcha/api/siteverify?secret=6Ld6W7MZAAAAANX78hgKffGvsPuMGromS-n0nb6K&response=" +
+        "https://www.google.com/recaptcha/api/siteverify?secret=" +
+          process.env.SERVERSIDE_RECAPTCHA_KEY +
+          "&response=" +
           req.body.token,
         {},
         config
