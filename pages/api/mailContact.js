@@ -1,6 +1,5 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import axios from "axios";
-const logger = require("pino")();
 
 export default (req, res) => {
   if (req.method === "POST") {
@@ -8,7 +7,7 @@ export default (req, res) => {
     axios
       .post("https://www.google.com/recaptcha/api/siteverify", {
         secret: process.env.NEXT_PUBLIC_CLIENTSIDE_RECAPTCHA_KEY,
-        response: token,
+        response: req.body.token,
       })
       .then((googleResp) => {
         if (googleResp.data.success) {
@@ -16,7 +15,6 @@ export default (req, res) => {
           res.end("On a bien reçu le POST avec ça dedans : ", req.body);
         } else {
           console.log(googleResp);
-          logger.info(googleResp);
           res.statusCode = 500;
           res.end("Message couldn't be posted.");
         }
