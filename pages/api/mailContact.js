@@ -4,11 +4,19 @@ import axios from "axios";
 export default (req, res) => {
   if (req.method === "POST") {
     console.log(req.body);
+    let config = {
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded; charset=utf-8",
+      },
+    };
     axios
-      .post("https://www.google.com/recaptcha/api/siteverify", {
-        secret: process.env.NEXT_PUBLIC_CLIENTSIDE_RECAPTCHA_KEY,
-        response: req.body.token,
-      })
+      .post(
+        "https://www.google.com/recaptcha/api/siteverify?secret=" +
+          process.env.NEXT_PUBLIC_CLIENTSIDE_RECAPTCHA_KEY +
+          "&response=" +
+          req.body.token,
+        config
+      )
       .then((googleResp) => {
         if (googleResp.data.success) {
           res.statusCode = 200;
