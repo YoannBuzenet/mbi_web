@@ -6,7 +6,7 @@ export default (req, res) => {
     console.log(req.body);
     let config = {
       headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
+        "Content-Type": "application/x-www-form-urlencoded; charset=utf-8",
       },
     };
     axios
