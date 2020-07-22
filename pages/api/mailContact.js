@@ -15,6 +15,7 @@ export default (req, res) => {
           process.env.NEXT_PUBLIC_CLIENTSIDE_RECAPTCHA_KEY +
           "&response=" +
           req.body.token,
+        {},
         config
       )
       .then((googleResp) => {
