@@ -33,7 +33,9 @@ const GetStarted = () => {
           console.log(token);
           //Adding token to state
           formData["token"] = token;
-          axios.post("api/mailContact", formData);
+          axios
+            .post("api/mailContact", formData)
+            .then((respServer) => console.log(respServer));
         });
     });
   }
