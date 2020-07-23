@@ -63,7 +63,12 @@ const GetStarted = () => {
           rel="stylesheet"
         ></link>
       </Head>
-      {isPopUpDisplayed && <PopUp setIsPopUpDisplayed={setIsPopUpDisplayed} />}
+      {isPopUpDisplayed && (
+        <PopUp
+          setIsPopUpDisplayed={setIsPopUpDisplayed}
+          setFormData={setFormData}
+        />
+      )}
       <Navbar />
       <div className="container">
         <div className="getStarted">
