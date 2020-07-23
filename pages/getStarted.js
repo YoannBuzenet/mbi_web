@@ -5,6 +5,7 @@ import { TextField } from "@material-ui/core";
 import Footer from "../components/Footer";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import PopUp from "../components/PopUp";
 
 const GetStarted = () => {
   const [formData, setFormData] = useState({
@@ -15,6 +16,8 @@ const GetStarted = () => {
     country: "",
     message: "",
   });
+
+  const [isPopUpDisplayed, setIsPopUpDisplayed] = useState(false);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -35,7 +38,7 @@ const GetStarted = () => {
           formData["token"] = token;
           axios
             .post("api/mailContact", formData)
-            .then((respServer) => console.log(respServer))
+            .then((respServer) => setIsPopUpDisplayed(true))
             .catch((error) => console.log(error));
         });
     });
@@ -60,6 +63,7 @@ const GetStarted = () => {
           rel="stylesheet"
         ></link>
       </Head>
+      {isPopUpDisplayed && <PopUp setIsPopUpDisplayed={setIsPopUpDisplayed} />}
       <Navbar />
       <div className="container">
         <div className="getStarted">
@@ -68,7 +72,7 @@ const GetStarted = () => {
           </div>
           <div className="container768">
             <div className="form-background">
-              <form autoComplete="off">
+              <form autoComplete="off" onSubmit={(e) => checkCaptcha(e)}>
                 <div>
                   <TextField
                     id="outlined-basic"
@@ -168,11 +172,7 @@ const GetStarted = () => {
                     onChange={handleChange}
                   />
                 </div>
-                <button
-                  className="CTA-button"
-                  onClick={(e) => checkCaptcha(e)}
-                  type="button"
-                >
+                <button className="CTA-button" type="submit">
                   Send
                 </button>
               </form>
