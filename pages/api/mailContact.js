@@ -1,8 +1,11 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import axios from "axios";
+import mailing from "../../server/mailing";
 
 export default (req, res) => {
+  let userData;
   if (req.method === "POST") {
+    userData = req.body;
     console.log(req.body);
     let config = {
       headers: {
@@ -20,8 +23,10 @@ export default (req, res) => {
       )
       .then((googleResp) => {
         if (googleResp.data.success) {
+          //On envoie le mail ici
+          mailing.mailLeadToAdmin(userData);
           res.statusCode = 200;
-          res.end("On a bien reçu le POST avec ça dedans : ", req.body);
+          res.end();
         } else {
           console.log(googleResp);
           res.statusCode = 500;
