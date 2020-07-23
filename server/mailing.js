@@ -6,8 +6,8 @@ async function mailLeadToAdmin(userData) {
     port: process.env.SMTP_PORT,
     secure: true, // true for 465, false for other ports
     auth: {
-      user: process.env.SMTP_USER, // generated ethereal user
-      pass: process.env.SMTP_PASS, // generated ethereal password
+      user: process.env.SMTP_USER,
+      pass: process.env.SMTP_PASS,
     },
   });
 
