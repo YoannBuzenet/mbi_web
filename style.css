@@ -47,16 +47,22 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 2rem;
+  padding: 6rem;
   border-radius: 6px;
   background-color: rgb(244, 245, 247);
-  z-index: 2;
+  z-index: 3;
 }
 
 .popUpContainer p:first-child {
   font-size: 3rem;
+  margin-bottom: 1.5rem;
 }
 .popUpContainer p:nth-of-type(2) {
+  font-size: 1.6rem;
+}
+
+.popUpContainer .CTA-button {
+  margin-top: 2rem;
 }
 
 @media only screen and (max-width: 1024px) {
