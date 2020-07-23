@@ -38,7 +38,7 @@ main {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.3);
   z-index: 1;
 }
 
@@ -47,8 +47,15 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 2rem;
   background-color: rgb(244, 245, 247);
   z-index: 2;
+}
+
+.popUpContainer > p:first-child {
+  font-size: 3rem;
+}
+.popUpContainer > p:nth-of-type(2) {
 }
 
 @media only screen and (max-width: 1024px) {
