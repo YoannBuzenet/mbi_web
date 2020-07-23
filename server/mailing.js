@@ -1,3 +1,5 @@
+const nodemailer = require("nodemailer");
+
 async function mailLeadToAdmin(userData) {
   let transporter = nodemailer.createTransport({
     host: process.env.SMTP_PORT,
