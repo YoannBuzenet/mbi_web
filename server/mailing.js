@@ -2,7 +2,7 @@ const nodemailer = require("nodemailer");
 
 async function mailLeadToAdmin(userData) {
   let transporter = nodemailer.createTransport({
-    host: process.env.SMTP_PORT,
+    host: process.env.SMTP_HOST,
     port: process.env.SMTP_PORT,
     secure: true, // true for 465, false for other ports
     auth: {
