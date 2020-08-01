@@ -436,6 +436,7 @@ footer span {
 
 .team-commitment {
   max-width: 768px;
+  font-weight: 600;
 }
 
 .profiles-container {
@@ -505,6 +506,14 @@ footer span {
   .container768 {
     max-width: 80%;
     margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .profiles > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
