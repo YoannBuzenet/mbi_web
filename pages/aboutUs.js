@@ -20,6 +20,15 @@ const AboutUs = () => {
         <div className="container768">
           <h1>The MTG Interface team</h1>
         </div>
+        <div className="teamSpirit">
+          <div className="container768">
+            <p className="team-commitment">
+              The Magic industry needs a strong software to automatize its
+              prices and its logistics. We are commited to deliver the best
+              software of the industry.
+            </p>
+          </div>
+        </div>
         <div className="profiles-container">
           <div className="profiles container768">
             <div className="yoann">

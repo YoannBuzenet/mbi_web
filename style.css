@@ -171,7 +171,11 @@ main {
     display: none;
   }
 }
-
+@media only screen and (max-width: 550px) {
+  .main-punchline {
+    font-size: 3rem;
+  }
+}
 /***SECOND LINER ***/
 
 .second-liner {
@@ -416,6 +420,22 @@ footer span {
 .aboutUs p:first-child {
   text-align: center;
   font-size: 3rem;
+}
+
+.teamSpirit {
+  background-color: rgb(244, 245, 247);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.teamSpirit p:first-child {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.team-commitment {
+  width: 768px;
 }
 
 .profiles-container {
