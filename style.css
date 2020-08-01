@@ -435,7 +435,7 @@ footer span {
 }
 
 .team-commitment {
-  width: 768px;
+  max-width: 768px;
 }
 
 .profiles-container {
