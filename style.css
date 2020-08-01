@@ -515,6 +515,10 @@ footer span {
     flex-direction: column;
     align-items: center;
   }
+  .container768 {
+    max-width: 90%;
+    margin: 0 auto;
+  }
 }
 
 /**********************/
