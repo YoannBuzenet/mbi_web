@@ -584,6 +584,11 @@ footer span {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .getStarted form label {
+    font-size: 1.8rem;
+  }
+}
 /**********************/
 /********NAVBAR*******/
 /**********************/
