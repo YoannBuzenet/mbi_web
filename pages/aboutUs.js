@@ -23,9 +23,9 @@ const AboutUs = () => {
         <div className="teamSpirit">
           <div className="container768">
             <p className="team-commitment">
-              The Magic industry needs a strong software to automatize its
-              prices and its logistics. We are commited to deliver the best
-              software of the industry.
+              Prices are changing everyday in the MTG Industry. Magic shops need
+              a strong software to automatize their prices and their logistics.
+              We are commited to deliver the best software of the industry.
             </p>
           </div>
         </div>

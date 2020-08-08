@@ -273,6 +273,17 @@ h2.punchline {
   }
 }
 @media only screen and (max-width: 768px) {
+  .third-liner {
+    height: 450px;
+  }
+  .third-liner img {
+    display: none;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .third-liner {
+    height: 500px;
+  }
   .third-liner img {
     display: none;
   }
@@ -380,6 +391,11 @@ h3.punchline {
   .fifth-liner > div {
     flex-direction: column;
     text-align: left;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .fifth-liner p {
+    text-align: center;
   }
 }
 
