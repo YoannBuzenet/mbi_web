@@ -244,7 +244,7 @@ main {
   font-size: 2rem;
   max-width: 768px;
   margin: auto;
-  line-height: var(--line-height);
+  line-height: 2.6rem;
 }
 
 .third-liner img {
@@ -275,6 +275,9 @@ h2.punchline {
 @media only screen and (max-width: 768px) {
   .third-liner {
     height: 450px;
+  }
+  .third-liner p {
+    text-align: left;
   }
   .third-liner img {
     display: none;
